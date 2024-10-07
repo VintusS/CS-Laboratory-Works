@@ -27,7 +27,7 @@ func Laboratory1() {
             Encryption()
             flag = false
         } else if keyPress == "2" {
-            print("\ndec")
+            Decryption()
             flag = false
         } else {
             print("\nInvalid input. Please choose '1' or '2'.")
