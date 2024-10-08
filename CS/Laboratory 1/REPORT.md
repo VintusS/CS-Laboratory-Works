@@ -154,8 +154,8 @@ func HardModeDecryption() {
 ```bash
 Enter the permutation key (same as used for encryption): caesarr
 Enter the key (1-25): 5
-Enter the message to decrypt (only letters and spaces): WFSITR
-Decrypted message: RANDOM
+Enter the message to decrypt (only letters and spaces): Ivis
+Decrypted message: BOBY
 ```
 
 ### Conclusion
