@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - Lite Mode Caesar
 func Decryption() {
     
     print("Please enter a key (1-25) for decryption: ", terminator: "")
@@ -44,6 +45,51 @@ func decryptMessage(_ message: String, withKey key: Int) -> String {
     return decrypted
 }
 
+// MARK: - Hard Mode Caesar
 func HardModeDecryption() {
+    print("Enter the encrypted message:")
+    guard let encryptedMessage = readLine()?.trimmingCharacters(in: .whitespacesAndNewlines) else {
+        print("Invalid input.")
+        return
+    }
+
+    print("Enter the permutation key (must contain only letters and at least 7 characters):")
+    guard let permutationKey = readLine()?.trimmingCharacters(in: .whitespacesAndNewlines), permutationKey.count >= 7,
+          permutationKey.allSatisfy({ $0.isLetter }) else {
+        print("Invalid permutation key.")
+        return
+    }
     
+    print("Enter the Caesar key (1-25):")
+    guard let caesarKeyInput = readLine(), let caesarKey = Int(caesarKeyInput), caesarKey >= 1, caesarKey <= 25 else {
+        print("Invalid Caesar key.")
+        return
+    }
+
+    var permutedAlphabet = [Character]()
+    var seen = Set<Character>()
+
+    for char in permutationKey.uppercased() {
+        if char.isLetter && !seen.contains(char) {
+            seen.insert(char)
+            permutedAlphabet.append(char)
+        }
+    }
+
+    for char in "ABCDEFGHIJKLMNOPQRSTUVWXYZ" {
+        if !seen.contains(char) {
+            permutedAlphabet.append(char)
+        }
+    }
+
+    var decryptedMessage = ""
+
+    for char in encryptedMessage.uppercased() {
+        if let index = permutedAlphabet.firstIndex(of: char) {
+            let newIndex = (index - caesarKey + 26) % 26
+            decryptedMessage.append(permutedAlphabet[newIndex])
+        }
+    }
+
+    print("Decrypted Message: \(decryptedMessage)")
 }
