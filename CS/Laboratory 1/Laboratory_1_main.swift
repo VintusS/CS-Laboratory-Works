@@ -18,7 +18,7 @@ func Laboratory1() {
     var flag0: Bool = true
     
     print("Choose crypto mode:")
-    print("1.easy   |   2.hard")
+    print("1.without permutation   |   2.with permutation")
     
     while(flag) {
         
