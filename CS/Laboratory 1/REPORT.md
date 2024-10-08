@@ -13,28 +13,37 @@ This project implements a Caesar cipher with an additional permutation layer to 
 
 ### Overview
 
-The encryption process involves two keys:
+The Caesar cipher is a substitution cipher where each letter in the plaintext is replaced by a letter a fixed number of positions down the alphabet. To enhance its security, this implementation combines the Caesar cipher with a permutation of the alphabet based on a provided keyword.
 
-1. Caesar Key (k1): A number between 1 and 25 that determines the shift for the Caesar cipher.
-2. Permutation Key (k2): A string of at least 7 unique alphabetical characters used to create a new order of the alphabet.
+### Key Steps
 
-##  Implementation
+1. Input Handling:
+    -Prompt for the Caesar key (a number between 1 and 25).
+    -Prompt for the plaintext message.
+2. Encrypting the Message:
+    -Remove spaces from the message and convert all letters to uppercase.
+    -For each character in the message, find its position in the standard alphabet, apply the Caesar shift, and replace it with the corresponding character in the permuted alphabet.
+
+##  Code Snippet
                                                                                 
-The encryption function, HardModeEncryption, combines both keys to encrypt a given plaintext message. The steps are as follows:
-
-1. Input Handling: The user is prompted to enter the plaintext message, permutation key, and Caesar key.
-2. Creating the Permuted Alphabet: The function generates a new alphabet based on the permutation key, placing its characters first, followed by the remaining letters of the alphabet.
-3. Encrypting the Message: Each letter of the plaintext is shifted according to the Caesar key using the permuted alphabet.
-
-### Usage
-                                                                                
+Here's a simplified version of the encryption process:
+                        
 ```swift
-func HardModeEncryption() {
-    // Input handling and encryption logic here
+// Example function structure for HardModeEncryption
+func Encryption() {
+    // Input handling for permutation key and Caesar key
+    // Validate keys and message
+    // Encrypt the message using the new alphabet and Caesar key
 }
 ```
 
-Call the function, and follow the prompts to enter the necessary data for encryption.
+### Example
+                
+```bash
+Enter the key (1-25): 5
+Enter the message to encrypt (only letters and spaces): random
+Encrypted message: WFSITR
+```
 
 ##  Task 1.2:
 
@@ -64,5 +73,3 @@ Call the function, and follow the prompts to enter the necessary data for decryp
                                                                             
 This project successfully implements the Caesar cipher with a permutation layer, demonstrating a more complex encryption method. Both encryption and decryption functions allow for user input and handle various edge cases, ensuring robustness.
 
-## References
-1. COJUHARI Irina, Duca Ludmila, Fiodorv Ion. "Formal Languages and Finite Automata: Guide for practical lessons". Technical University of Moldova
