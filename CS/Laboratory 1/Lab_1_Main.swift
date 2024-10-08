@@ -47,7 +47,22 @@ func Laboratory1() {
             flag = false
         } else if mode == "2" {
             // MARK: - Task 1.2
-            //HARDMODE
+            print("Choose one operation:")
+            print("1.encryption   |   2.decryption")
+            
+            while(flag0) {
+                let keyPress = getKeyPress()
+                
+                if keyPress == "1" {
+                    HardModeEncryption()
+                    flag0 = false
+                } else if keyPress == "2" {
+                    HardModeDecryption()
+                    flag0 = false
+                } else {
+                    print("\nInvalid input. Please choose '1' or '2'.")
+                }
+            }
             
             flag = false
         } else {

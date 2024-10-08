@@ -43,3 +43,7 @@ func decryptMessage(_ message: String, withKey key: Int) -> String {
     
     return decrypted
 }
+
+func HardModeDecryption() {
+    
+}
