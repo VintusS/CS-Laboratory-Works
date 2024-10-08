@@ -22,9 +22,22 @@
 		71A6ACEC2CB3109C00617644 /* CS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CS; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		71A6AD092CB4B16200617644 /* Exceptions for "CS" folder in "Compile Sources" phase from "CS" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 71A6ACE82CB3109C00617644 /* Sources */;
+			membershipExceptions = (
+				"Laboratory 1/REPORT.md",
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		71A6ACEE2CB3109C00617644 /* CS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				71A6AD092CB4B16200617644 /* Exceptions for "CS" folder in "Compile Sources" phase from "CS" target */,
+			);
 			path = CS;
 			sourceTree = "<group>";
 		};
