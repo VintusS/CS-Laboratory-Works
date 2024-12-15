@@ -71,6 +71,9 @@ struct FrequencyAnalysisView: View {
                                 ))
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .frame(width: 50)
+                                .onChange(of: letterMapping[letter]) { _ in
+                                    updateDecryptedText()
+                                }
                             }
                         }
                     }
@@ -105,6 +108,16 @@ struct FrequencyAnalysisView: View {
         letterMapping = [:]
         decryptedText = ""
     }
+    
+    func updateDecryptedText() {
+        decryptedText = String(ciphertext.map { char in
+            if let mappedChar = letterMapping[char.lowercased().first ?? char] {
+                return char.isUppercase ? Character(mappedChar.uppercased()) : mappedChar
+            } else {
+                return char
+            }
+        })
+    }
 }
 
 struct FrequencyAnalysisView_Previews: PreviewProvider {
@@ -112,4 +125,3 @@ struct FrequencyAnalysisView_Previews: PreviewProvider {
         FrequencyAnalysisView()
     }
 }
-
