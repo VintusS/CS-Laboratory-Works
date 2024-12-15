@@ -116,6 +116,7 @@ struct FrequencyAnalysisView: View {
     
     private func updateDecryptedText() {
         decryptedText = applyDecryption(to: ciphertext, with: letterMapping)
+        print(decryptedText)
     }
 }
 
