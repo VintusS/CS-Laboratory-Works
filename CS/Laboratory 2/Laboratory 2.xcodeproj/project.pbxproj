@@ -21,6 +21,11 @@
 			path = "Laboratory 2";
 			sourceTree = "<group>";
 		};
+		71FC3C7A2D0F7C17009B4A30 /* Screenshots */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +42,7 @@
 		71FC3C472D0F6BCA009B4A30 = {
 			isa = PBXGroup;
 			children = (
+				71FC3C7A2D0F7C17009B4A30 /* Screenshots */,
 				71FC3C722D0F7763009B4A30 /* REPORT.md */,
 				71FC3C522D0F6BCA009B4A30 /* Laboratory 2 */,
 				71FC3C512D0F6BCA009B4A30 /* Products */,
@@ -68,6 +74,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				71FC3C522D0F6BCA009B4A30 /* Laboratory 2 */,
+				71FC3C7A2D0F7C17009B4A30 /* Screenshots */,
 			);
 			name = "Laboratory 2";
 			packageProductDependencies = (

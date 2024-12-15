@@ -51,7 +51,7 @@ func getWordPartsFrequencies(text: String, nrOfLetters: Int, maxParts: Int? = ni
 ### Step 2: Replace the Most Frequent Letter with E
 In English, the letter E is the most frequently used. We begin the decryption process by identifying the most frequent letter in the ciphertext and replacing it with E.
 
-![Most Used Character Change](Laboratory\ 2/Screenshots/Screenshot1.png)
+![Most Used Character Change](Screenshots/Screenshot1.png)
 
 
 ### Conclusion
