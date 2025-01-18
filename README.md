@@ -8,4 +8,4 @@ A SwiftUI App for Deciphering Text Using Letter Frequency and Combination Analys
 ## [Vigenère Cipher](https://github.com/VintusS/CS-Laboratory-Works/tree/main/CS/Laboratory%203)
 Implementation and Analysis of the Vigenère Cipher in Swift
 ## [Data Encryption Standard - Substitution](https://github.com/VintusS/CS-Laboratory-Works/tree/main/CS/Laboratory%204)
-Implementation of the S-Box substitution step in the Data Encryption Standard algorithm.
+The goal of this laboratory work is to encrypt a specific block of a message using the DES algorithm, based on a provided key, and represent the encrypted block in hexadecimal format.
