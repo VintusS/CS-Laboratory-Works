@@ -6,6 +6,6 @@ A simple CLI tool for encrypting and decrypting strings using the Caesar Cipher.
 ## [Frequency Analysis](https://github.com/VintusS/CS-Laboratory-Works/tree/main/CS/Laboratory%202)
 A streamlit web-app for decyphering text sent with a letter substitution via frequency analysis of the letter and letter combination occurances in the ciphertext.
 ## [Vigenère Cipher](https://github.com/VintusS/CS-Laboratory-Works/tree/main/CS/Laboratory%203)
-Laboratory: Implementation and Analysis of the Vigenère Cipher
+Implementation and Analysis of the Vigenère Cipher in Swift
 ## [Data Encryption Standard - Substitution](https://github.com/VintusS/CS-Laboratory-Works/tree/main/CS/Laboratory%204)
 Implementation of the S-Box substitution step in the Data Encryption Standard algorithm.
