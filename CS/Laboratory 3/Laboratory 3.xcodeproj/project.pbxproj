@@ -20,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		718E638F2D3C233A00348CDE /* Laboratory 3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Laboratory 3"; sourceTree = BUILT_PRODUCTS_DIR; };
+		718E63A12D3C2C0200348CDE /* Laboratory_3_Task.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Laboratory_3_Task.pdf; sourceTree = "<group>"; };
+		718E63A42D3C2C3700348CDE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -44,6 +46,8 @@
 		718E63862D3C233A00348CDE = {
 			isa = PBXGroup;
 			children = (
+				718E63A42D3C2C3700348CDE /* README.md */,
+				718E63A12D3C2C0200348CDE /* Laboratory_3_Task.pdf */,
 				718E63912D3C233A00348CDE /* Laboratory 3 */,
 				718E63902D3C233A00348CDE /* Products */,
 			);
